@@ -1,0 +1,104 @@
+.header {
+    display: table;
+    position: relative;
+    left: 10%;
+    top: 14px;
+    font-family: sans-serif;
+}
+.row {
+    display: table-row;
+}
+span {
+    margin-right: 10px;
+    display: table-cell;
+    position: relative;
+}
+img {
+    height: 24px;
+    width: 24px;
+}
+.tooltiptext {
+    width: 80px;
+    visibility: hidden;
+    position: absolute;
+    color: #080808;
+    z-index: 1;
+    text-align: center;
+    left: -64%;
+    border-radius: 3px;
+    border: 1px solid white;
+    background: white;
+    opacity: 0.5;
+    text-transform: lowercase;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.resume > a:after {
+    content: '';
+    -webkit-mask: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat 0 0/24px 24px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-color:white;
+}
+.life > a:after {
+    content: '';
+    /* background: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat; 
+    mask: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat 50% 50%;*/
+    -webkit-mask: url(../../imgs/open-iconic-master/svg/file.svg) no-repeat 0 0/24px 24px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-color:white;
+    opacity: 0.8;
+}
+.homeLink > a:after {
+    content: '';
+    /* background: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat; 
+    mask: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat 50% 50%;*/
+    -webkit-mask: url(../../imgs/open-iconic-master/svg/home.svg) no-repeat 0 0/24px 24px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-color:white;
+}
+.contact > a:after {
+    content: '';
+    /* background: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat; 
+    mask: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat 50% 50%;*/
+    -webkit-mask: url(../../imgs/open-iconic-master/svg/envelope-closed.svg) no-repeat 0 0/24px 24px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-color:white;
+}
+path {
+    fill: white;
+}

@@ -1,0 +1,28 @@
+.contactInfo {
+    top: 100px;
+    position: relative;
+    left: 33%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 500px;
+}
+
+.item {
+    width: 50px;
+    margin: auto;
+    
+}
+.item img {
+    width: 48px;
+    height: 48px;
+}
+
+li:first-child {
+    padding-top: 12px;
+}
+.douban {
+    padding-top: 12px;
+}

@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    z-index: 1;
+    background-color: black;
+    height: 1200px;
+    position: relative;
+}
+
+@keyframes dark-transition {
+    from { 
+        opacity: 1;
+    }
+    to { 
+        opacity: 0.5;
+    }
+}
+
+body:after {
+    background-image: url('../imgs/background.jpg');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation: dark-transition 4s;
+    animation-name: dark-transition;
+    animation-duration: 4s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+}
