@@ -15,7 +15,8 @@ class DataStore {
             getAllPages:    this.getAllPages,
             getAllPosts:    this.getAllPosts,
             getPageBySlug:  this.getPageBySlug,
-            getMediaByParentId:  this.getMediaByParentId
+            getMediaByParentId:  this.getMediaByParentId,
+            getMediaListByParentId: this.getMediaListByParentId
         });
     }
 
@@ -52,6 +53,13 @@ class DataStore {
         return media[Object.keys(media).find((m, i) => {
             return media[m].post === id;
         })] || {};
+    }
+    getMediaListByParentId(id) {
+        //console.log(id);
+        const media = this.getState().data.media;
+        //console.log(media);
+        //console.log(media.filter(m => m.post === id));
+        return media.filter(m => m.post === id) || {};
     }
 
 }

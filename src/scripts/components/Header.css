@@ -60,7 +60,7 @@ img {
     content: '';
     /* background: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat; 
     mask: url(../../imgs/open-iconic-master/svg/document.svg) no-repeat 50% 50%;*/
-    -webkit-mask: url(../../imgs/open-iconic-master/svg/file.svg) no-repeat 0 0/24px 24px;
+    -webkit-mask: url(../../imgs/open-iconic-master/svg/puzzle-piece.svg) no-repeat 0 0/24px 24px;
     height: 24px;
     width: 24px;
     display: inline-block;
@@ -69,7 +69,7 @@ img {
     left: 0px;
     background-size: cover;
     background-color:white;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 .homeLink > a:after {
     content: '';

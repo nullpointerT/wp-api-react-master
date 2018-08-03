@@ -1,0 +1,12 @@
+
+.photos {
+    display: flex;    
+    flex-wrap: wrap;
+    margin: 50px;
+}
+img {
+    margin: auto;
+    height: 370px;
+    width: 390px;
+    padding-top: 50px;
+}

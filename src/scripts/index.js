@@ -6,6 +6,7 @@ import About                from 'components/About/About.js';
 import Contact              from 'components/Contact.js';
 import Header               from 'components/Header.js';
 import Resume               from 'components/Resume.js';
+import Life                 from 'components/Life.js';
 import './index.css';
 import {
     BrowserRouter as Router,
@@ -46,6 +47,7 @@ class AppInitializer {
                             <Route path="/" component={ Home } exact />
                             <Route path="/resume" component={ Resume } exact />
                             <Route path="/contact" component={ Contact } exact />
+                            <Route path="/life" component={ Life } exact />
 
                             {this.buildRoutes(response)}
                             <Route render={() => { return <Redirect to="/" /> }} />
