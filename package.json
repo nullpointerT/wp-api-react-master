@@ -16,7 +16,7 @@
     "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
     "babel-runtime": "^6.23.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "prop-types": "^15.6.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
